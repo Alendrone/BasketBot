@@ -1,25 +1,25 @@
 {
-  "name": "basketbot",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Alendrone/BasketBot.git"
-  },
-  "description": " ",
-  "version": "0.0.1",
+  "name": "basketbot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alendrone/BasketBot.git"
+  },
+  "description": "",
   "keywords": [
-    "discord bot",
-    "node",
-    "node js"
-  ],
-  "license": "MIT",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "discord.js": "11.2.0"
-  },
-  "engines": {
-    "node": ">=8.9.1"
-  }
+    "discord bot",
+    "node",
+    "node js"
+  ],
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "11.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.1"
+  }
 }
