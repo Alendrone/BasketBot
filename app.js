@@ -7,16 +7,15 @@ client.on('ready', () => {
   {
     status: "idle",
     game: {
-      name:"",
-      type: 0,
-      url: ""
+      name:"@BasketBot",
+      type: 0
     }
   });
 });
 
 client.on('message', (message) => {
   const args = message.content.slice(entity.length).trim().split(/ +/g);
-  const command =s args.shift().toLowerCase();
+  const command = args.shift().toLowerCase();
 
   if (message.content.startsWith(entity)) {
     if (command === 'ball') {
