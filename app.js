@@ -6,18 +6,18 @@ client.on('ready', () => {
   console.log('Ready!');
 });
 
-client.on('message', message => {
-  const args = message.content.slice(entity.length).trim().split(/ +/g);
+client.on('message', msg => {
+  const args = msg.content.slice(entity.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  if (message.content.startsWith(entity)) {
+  if (msg.content.startsWith(entity)) {
     if (command === 'ball') {
-      message.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
+      msg.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
     }
   } if else {
-      if (message.content.endsWith(entity)) {
+      if (msg.content.endsWith(entity)) {
         if ("ball" == command) {
-          message.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
+          msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
       }
     }
   }
