@@ -14,7 +14,7 @@ client.on('ready', () => {
   });
 });
 
-client.on('message', function(message) => {
+client.on('message', (message) => {
   const args = message.content.slice(entity.length).trim().split(/ +/g);
   const command =s args.shift().toLowerCase();
 
