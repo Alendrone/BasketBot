@@ -3,17 +3,10 @@ const client = new Discord.Client();
 var entity = "<@382115660336988161>";
 
 client.on('ready', () => {
-  client.user.setPresence(
-  {
-    status: "idle",
-    game: {
-      name:"@BasketBot",
-      type: 0
-    }
-  });
+  console.log('Ready!');
 });
 
-client.on('message', (message) => {
+client.on('message', message => {
   const args = message.content.slice(entity.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
