@@ -14,7 +14,7 @@ client.on('message', msg => {
     if (command === 'ball') {
       msg.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
     }
-  } if else {
+  } else {
       if (msg.content.endsWith(entity)) {
         if (command === 'ball') {
           msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
