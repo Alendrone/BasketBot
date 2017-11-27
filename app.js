@@ -21,7 +21,6 @@ client.on('message', msg => {
         }
       }
     }
-  }
 });
 
 
