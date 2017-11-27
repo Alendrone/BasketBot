@@ -7,8 +7,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  const args = msg.content.slice(entity.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
+  var args = msg.content.slice(entity.length).trim().split(/ +/g);
+  var command = args.shift().toLowerCase();
 
   if (msg.content.startsWith(entity)) {
     if (command === 'ball') {
@@ -16,8 +16,9 @@ client.on('message', msg => {
     }
   } if else {
       if (msg.content.endsWith(entity)) {
-        if ("ball" == command) {
+        if (command === 'ball') {
           msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
+        }
       }
     }
   }
