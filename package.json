@@ -1,16 +1,17 @@
 {
   "name": "basketbot",
-  "description": "A multirole Discord bot.",
+  "description": "A multirole Discord bot",
   "version": "0.0.0",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "discord.js": "11.2.0",
+    "discord.js": "11.1.0",
     "request": "2.81.0"
   },
   "engines": {
-    "node": "<=8.9.1"
+    "node": "<= 8.9.1",
+    "npm": "<= 5.4.0",
   }
 }
