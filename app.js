@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var entity = "<@382115660336988161>";
+const entity = "<@382115660336988161>";
 
 client.on('ready', () => {
   console.log('Ready!');
