@@ -24,6 +24,5 @@ client.on('message', msg => {
 });
 
 
-// Authorizes bot login token
-
+// Authorizes bot login token=
 client.login(process.env.APP_TOKEN);
