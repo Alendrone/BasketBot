@@ -13,14 +13,14 @@ client.on('message', msg => {
   if (msg.content.startsWith(entity)) {
     if (command === 'ball') {
       msg.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
+    } else {
+        if (msg.content.endsWith(entity)) {
+          if (command === 'ball') {
+            msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
+          }
+        }
+      }
     }
-  }  if {
-       if (msg.content.endsWith(entity)) {
-         if (command === 'ball') {
-           msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
-         }
-       }
-     }
 });
 
 
