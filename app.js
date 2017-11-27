@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const entity = "<@382115660336988161>";
+var entity = "<@382115660336988161>";
 
 client.on('ready', () => {
   console.log('Ready!');
@@ -14,7 +14,7 @@ client.on('message', msg => {
     if (command === 'ball') {
       msg.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
     }
-  } else {
+  } if else {
       if (msg.content.endsWith(entity)) {
         if ("ball" == command) {
           msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
