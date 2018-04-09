@@ -1,3 +1,4 @@
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var entity = "<@382115660336988161>";
@@ -14,4 +15,15 @@ client.on('message', msg => {
     if (command === 'ball') {
       msg.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
     } else {
-        if (msg.content.endsWith
+        if (msg.content.endsWith(entity)) {
+          if (command === 'ball') {
+            msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
+          }
+        }
+      }
+    }
+});
+
+
+// Authorizes bot login token
+client.login(process.env.BOT_TOKEN);
