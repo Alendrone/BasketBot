@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  var args = msg.content.slice(entity.length).trim().split(/ +/g);
+  var args = msg.content.substring(entity.length).trim().split(/ +/g);
   var command = args.shift().toLowerCase();
 
   if (message.content.indexOf(entity) === 0) {
