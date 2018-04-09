@@ -14,15 +14,4 @@ client.on('message', msg => {
     if (command === 'ball') {
       msg.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
     } else {
-        if (msg.content.endsWith(entity)) {
-          if (command === 'ball') {
-            msg.reply(":baseball: ☜╮( Ȋ     ͜ɂ  Ȋ  ☜╮) ");
-          }
-        }
-      }
-    }
-});
-
-
-// Authorizes bot login token
-client.login(process.env.BOT_TOKEN);
+        if (msg.content.endsWith
