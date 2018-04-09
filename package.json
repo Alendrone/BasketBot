@@ -1,17 +1,25 @@
 {
   "name": "basketbot",
-  "description": "A multirole Discord bot",
-  "version": "0.0.0",
-  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Alendrone/BasketBot.git"
+  },
+  "description": "",
+  "keywords": [
+    "discord bot",
+    "node",
+    "node js"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
+    "discord.js": "^11.3.0"
   },
   "engines": {
-    "node": "<= 8.9.1",
-    "npm": "<= 5.4.0"
+    "node": ">=8.11.1"
   }
 }
