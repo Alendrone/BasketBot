@@ -10,7 +10,7 @@ client.on('message', msg => {
   var args = msg.content.substring(entity.length).trim().split(/ +/g);
   var command = args.shift().toLowerCase();
 
-  if (message.content.indexOf(entity) === 0) {
+  if (message.content.startsWith(entity)) {
     if (command === 'ball') {
       msg.reply("(╭☞ Ȋ     ͜ɂ  Ȋ  )╭☞ :basketball: ");
     } else {
